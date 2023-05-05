@@ -1,0 +1,6 @@
+User: total number of producing fields
+DataFuel: There are 9433 producing fields in the field_data table.
+
+User: how many of them are from united states?
+DataFuel: There are 981 producing fields in the United States.
+

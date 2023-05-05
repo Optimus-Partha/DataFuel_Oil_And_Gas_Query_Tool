@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='operator.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <h1><img src="{{ url_for('static', filename='gd_logo.png') }}" alt=""></h1>
+  <img src="{{ url_for('static', filename='operator.png') }}" class="icon" />
+  <h3>Oil And Gas</h3>
+  <form action="/" method="post">
+<!--      <input type="text" name="animal_2" placeholder="Enter Your OpenAI API Key here" required /> -->
+        <input type="text" name="query" placeholder="Example: Top Producing State" required />
+      <input type="submit" value="Submit" />
+      <input type="button" value="Data In Graphs" onclick="window.location.href='{{ url_for('static', filename='bar_graph_line.png') }}'" />
+      <input type="button" value="Conversation" onclick="window.location.href='{{ url_for('static', filename='Conversation.txt') }}'" download />
+
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+
+</body>
