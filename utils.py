@@ -13,7 +13,6 @@ server = 'field'
 database = 'field_data.db'
 model = 'gpt-3.5-turbo-0301'
 
-os.environ['OPENAI_API_KEY'] = "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" # Tirath
 
 custom_table_info = {
     "field_data": """CREATE TABLE field_data" (

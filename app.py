@@ -12,11 +12,14 @@ conv_history = {'Qn:1':'','Ans:1':''}
 process_query_keywords = ["analytic", "process", "methodology","methodologys"]
 
 
+
 @app.route("/", methods=("GET", "POST"))
 def index():
     global graph_msg
     if request.method == "POST":
         query = request.form["query"]
+        openAI_API = request.form["openAI_API"]
+        os.environ['OPENAI_API_KEY'] = openAI_API
         pattern = "|".join(process_query_keywords)
         matches = re.findall(pattern.upper(), query.upper())
         # process query
@@ -55,5 +58,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0',port=8080)
+    app.run(debug=True,host='0.0.0.0',port=8080)
 
