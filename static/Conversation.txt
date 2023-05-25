@@ -1,0 +1,9 @@
+User: what is proppant?
+DataFuel:  Proppant is a sand or any other natural or man-made material used in hydraulic fracturing to prop open fractures either artificially created or enhanced fractures. For more information please reffer to our methodology document at the following weblinkn: 'https://oilgas.globaldata.com/Methodology/Details.
+
+User: what is fields status?
+DataFuel:  Fields status refers to the operational status of the field, such as abandoned, announced, planned, producing or discovered. For more information please reffer to our methodology document at the following weblinkn: 'https://oilgas.globaldata.com/Methodology/Details.
+
+User: total number of producing fields?
+DataFuel: There are 9348 producing fields. Graphs Available for this data.
+

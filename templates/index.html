@@ -13,8 +13,7 @@
   <img src="{{ url_for('static', filename='operator.png') }}" class="icon" />
   <h3>Oil And Gas</h3>
   <form action="/" method="post">
-<!--      <input type="text" name="animal_2" placeholder="Enter Your OpenAI API Key here" required /> -->
-      <input type="text" name="openAI_API" placeholder="Enter OpenAI API Key Here" required />
+<!--      <input type="text" name="openAI_API" placeholder="Enter OpenAI API Key Here" required /> -->
       <input type="text" name="query" placeholder="Example: Top Producing State" required />
       <input type="submit" value="Submit" />
       <input type="button" value="Data In Graphs" onclick="window.location.href='{{ url_for('static', filename='bar_graph_line.png') }}'" />
