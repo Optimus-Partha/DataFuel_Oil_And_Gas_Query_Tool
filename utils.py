@@ -19,7 +19,7 @@ model = 'gpt-3.5-turbo'
 # model = 'gpt-3.5-turbo-0301'
 # database = 'field_data.db'
 database = 'combined_data.db'
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "Your_API"
 
 def csv_sqllite():
     # read the data from a CSV file
